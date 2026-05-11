@@ -113,23 +113,19 @@
             </thead>
 
             <tbody>
-
+            </#list listaCidades as cidade>
             <tr>
-                <td>Londrina</td>
-                <td>Paraná</td>
+                <td>${cidade.nome}</td>
+                <td>${cidade.estado}</td>
 
                 <td>
                     <div class="d-flex justify-content-center gap-2">
-
-                        <button
-                                class="btn btn-warning btn-sm"
-                        >
+                        
+                        <button class="btn btn-warning btn-sm">
                             ALTERAR
                         </button>
 
-                        <button
-                                class="btn btn-danger btn-sm"
-                        >
+                        <button class="btn btn-danger btn-sm">
                             EXCLUIR
                         </button>
 
@@ -137,53 +133,7 @@
                 </td>
             </tr>
 
-            <tr>
-                <td>Curitiba</td>
-                <td>Paraná</td>
-
-                <td>
-                    <div class="d-flex justify-content-center gap-2">
-
-                        <button
-                                class="btn btn-warning btn-sm"
-                        >
-                            ALTERAR
-                        </button>
-
-                        <button
-                                class="btn btn-danger btn-sm"
-                        >
-                            EXCLUIR
-                        </button>
-
-                    </div>
-                </td>
-            </tr>
-
-            <tr>
-                <td>São Paulo</td>
-                <td>São Paulo</td>
-
-                <td>
-                    <div class="d-flex justify-content-center gap-2">
-
-                        <button
-                                class="btn btn-warning btn-sm"
-                        >
-                            ALTERAR
-                        </button>
-
-                        <button
-                                class="btn btn-danger btn-sm"
-                        >
-                            EXCLUIR
-                        </button>
-
-                    </div>
-                </td>
-            </tr>
-
-            </tbody>
+            </tbody>#list>
 
         </table>
 
